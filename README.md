@@ -130,7 +130,7 @@ The source browser's files are never changed: YARC copies them first and reads t
 
 ## Install
 
-Download the latest version from the **[Releases page](https://github.com/yenebeb/arc-shell/releases)**.
+Download the latest version from the **[Releases page](https://github.com/yenebeb/yarc/releases)**.
 
 ### Windows 10 / 11
 
@@ -261,8 +261,8 @@ No. Blocking is built in (see [Built-in ad and tracker blocking](#built-in-ad-an
 You need **Node.js 22.12+** (24 recommended), Git and **pnpm** (`corepack enable` picks up the version pinned in `package.json`).
 
 ```bash
-git clone https://github.com/yenebeb/arc-shell.git
-cd arc-shell
+git clone https://github.com/yenebeb/yarc.git
+cd yarc
 pnpm install         # also downloads the Electron binary
 pnpm dev             # start with hot reload
 ```

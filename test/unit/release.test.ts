@@ -26,7 +26,7 @@ test('isNewer only reports a strictly newer version', () => {
 
 const release: GithubRelease = {
   tag_name: 'v0.1.3',
-  html_url: 'https://github.com/yenebeb/arc-shell/releases/tag/v0.1.3',
+  html_url: 'https://github.com/yenebeb/yarc/releases/tag/v0.1.3',
   assets: [
     'YARC-0.1.3-arm64.dmg',
     'YARC-0.1.3-arm64.dmg.blockmap',
@@ -39,9 +39,9 @@ const release: GithubRelease = {
     'YARC-0.1.3-x64.AppImage',
     'YARC-Setup-0.1.3-x64.exe',
     'latest-mac.yml'
-  ].map((name) => ({ name, browser_download_url: `https://github.com/yenebeb/arc-shell/releases/download/v0.1.3/${name}` }))
+  ].map((name) => ({ name, browser_download_url: `https://github.com/yenebeb/yarc/releases/download/v0.1.3/${name}` }))
 }
-const url = (name: string) => `https://github.com/yenebeb/arc-shell/releases/download/v0.1.3/${name}`
+const url = (name: string) => `https://github.com/yenebeb/yarc/releases/download/v0.1.3/${name}`
 
 test('pickDownload picks the DMG for this Mac’s CPU', () => {
   assert.equal(pickDownload(release, 'darwin', 'arm64'), url('YARC-0.1.3-arm64.dmg'))

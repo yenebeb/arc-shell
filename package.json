@@ -5,13 +5,13 @@
   "description": "Yarrr! Yet Another Arc Clone: an open-source, Arc-style browser built on Electron: vertical sidebar, spaces with separate profiles, command bar, split view and Little Arc.",
   "license": "GPL-3.0-or-later",
   "author": "YARC contributors",
-  "homepage": "https://github.com/yenebeb/arc-shell",
+  "homepage": "https://github.com/yenebeb/yarc",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yenebeb/arc-shell.git"
+    "url": "git+https://github.com/yenebeb/yarc.git"
   },
   "bugs": {
-    "url": "https://github.com/yenebeb/arc-shell/issues"
+    "url": "https://github.com/yenebeb/yarc/issues"
   },
   "main": "./out/main/index.js",
   "engines": {

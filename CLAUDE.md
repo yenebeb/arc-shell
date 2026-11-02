@@ -19,7 +19,7 @@ Open-source Arc-browser replacement (Electron 45 / Chromium 156, React 19, TypeS
 
 ## Decisions already made (don't re-litigate)
 
-- Renamed from Arc Shell to YARC (Yet Another Arc Clone) on 2026-11-02. Kept on purpose: the `appId` `org.arcshell.browser`, the Windows registry keys and ProgIDs (`ArcShell*`), the GitHub repo name, and an existing `Arc Shell` profile folder (`src/main/profile-dir.ts`). Cookies aren't encrypted (Electron's cookie-encryption fuse is off), so no Keychain key is tied to the old name.
+- Renamed from Arc Shell to YARC (Yet Another Arc Clone) on 2026-11-02. Kept on purpose: the `appId` `org.arcshell.browser`, the Windows registry keys and ProgIDs (`ArcShell*`), and an existing `Arc Shell` profile folder (`src/main/profile-dir.ts`). Cookies aren't encrypted (Electron's cookie-encryption fuse is off), so no Keychain key is tied to the old name. The repo moved from `yenebeb/arc-shell` to `yenebeb/yarc` the same day; GitHub redirects the old name (installed apps poll it for updates), so never create a new repo called `arc-shell` on that account.
 - Google sign-in needs Electron's own UA (only the app-name token stripped); a spoofed Chrome UA is rejected. Chrome Sync is impossible for non-Chrome browsers → import instead.
 - Built-in ad blocking (Ghostery engine) because Electron has no `declarativeNetRequest`. Uses a custom adapter, not `enableBlockingInSession` (global IPC handlers break with multiple sessions).
 - Unsigned builds: macOS ad-hoc signed (`identity: "-"`), not notarized.
